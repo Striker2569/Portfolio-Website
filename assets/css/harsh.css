@@ -11669,3 +11669,6 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+.header-subtitle .header-mono .header-title{
+  text-align: center;
+}

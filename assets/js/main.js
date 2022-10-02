@@ -133,3 +133,21 @@ function initMap() {
       ]
     });
 }
+
+function sendEmail() {
+  var name = document.getElementById("name").value;
+  var mail = document.getElementById("mail").value;
+  var body = document.getElementById("body").value;
+  Email.send({
+    Host: "smtp.mailtrap.io",
+    Username: "6ebc23a7d5fdf2",
+    Password: "cc9823a47022ca",
+    To: '6harsh.isha@gmail.com',
+    From: mail,
+    Subject: name,
+    Body: body,
+  })
+    .then(function (message) {
+      alert("Mail has been sent successfully")
+    });
+}
